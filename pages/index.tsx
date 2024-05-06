@@ -98,14 +98,14 @@ const HeroSection: React.FC = () => {
             title={
               <FallInPlace>
                 Plus de temps,
-                <Br /> plus d'argent,
-                <Br /> moins d'efforts.
+                <Br /> plus d`&apos;argent,
+                <Br /> moins d`&apos;efforts.
               </FallInPlace>
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
                 Avacyn est un <Em>assistant intelligent</Em>
-                <Br /> qui aide les professionnels de l'immobilier <Br />{" "}
+                <Br /> qui aide les professionnels de l&aposimmobilier <Br />{" "}
                 à décupler leur productivité.
               </FallInPlace>
             }
@@ -220,7 +220,7 @@ const HighlightsSection = () => {
       <HighlightsItem colSpan={[1, null, 2]} title="Votre futur meilleur ami 😄">
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
-            Que vous ayez besoin d'améliorer votre annonce, corriger la qualité d'une photo ou encore consulter une référence juridique, Avacyn est en mesure de vous assister et vous faire gagner un temps précieux.
+            Que vous ayez besoin d`&apos;améliorer votre annonce, corriger la qualité d`&apos;une photo ou encore consulter une référence juridique, Avacyn est en mesure de vous assister et vous faire gagner un temps précieux.
             Elle dispose de <Em>20+ outils</Em> pour quotidiennement vous épauler.
           </Text>
 
@@ -257,7 +257,7 @@ const HighlightsSection = () => {
       </HighlightsItem>
       <HighlightsItem title="Des fondations solides.">
         <Text color="muted" fontSize="lg">
-        Nous n'aimons pas réinventer la roue, et vous non plus. Nous avons sélectionné les outils les plus productifs et les plus établis de la scène et construit notre modèle par-dessus.
+        Nous n`&apos;aimons pas réinventer la roue, et vous non plus. Nous avons sélectionné les outils les plus productifs et les plus établis de la scène et construit notre modèle par-dessus.
         </Text>
       </HighlightsItem>
       <HighlightsTestimonialItem
@@ -266,14 +266,14 @@ const HighlightsSection = () => {
         avatar="/static/images/avatar.jpg"
         gradient={["pink.200", "purple.500"]}
       >
-        “Depuis que j'utilise l'assistant IA multimodal, j'ai libéré du temps pour me concentrer sur mes clients et conclure des transactions plus rapidement. L'IA a vraiment révolutionné ma façon de travailler en immobilier.”
+        “Depuis que j`&apos;utilise l`&apos;assistant IA multimodal, j`&apos;ai libéré du temps pour me concentrer sur mes clients et conclure des transactions plus rapidement. L`&apos;IA a vraiment révolutionné ma façon de travailler en immobilier.”
       </HighlightsTestimonialItem>
       <HighlightsItem
         colSpan={[1, null, 2]}
         title="Mandatez avec deux longueurs d'avance."
       >
         <Text color="muted" fontSize="lg">
-        Nous prenons en charge tous vos besoins de base en matière d'immobilier, c'est pourquoi nous créons des fonctionnalités qui rendent notre produit unique.
+        Nous prenons en charge tous vos besoins de base en matière d`&apos;immobilier, c`&apos;est pourquoi nous créons des fonctionnalités qui rendent notre produit unique.
         </Text>
         <Wrap mt="8">
           {[
@@ -322,15 +322,15 @@ const FeaturesSection = () => {
           textAlign="left"
           as="p"
         >
-          Ce n'est pas
+          Ce n`&apos;est pas
           <Br /> un énième GPT.
         </Heading>
       }
       description={
         <>
-          Si les modèles linguistiques tels que GPT ont ouvert la voie à des applications révolutionnaires, ils rencontrent souvent leurs limites lorsqu'ils sont confrontés à des tâches complexes ou exigeant une expertise spécialisée. 
+          Si les modèles linguistiques tels que GPT ont ouvert la voie à des applications révolutionnaires, ils rencontrent souvent leurs limites lorsqu`&apos;ils sont confrontés à des tâches complexes ou exigeant une expertise spécialisée. 
           <Br /><Br />
-          Avacyn transcende ces modèles génériques en exploitant une architecture et un apprentissage adaptés à l'immobilier.
+          Avacyn transcende ces modèles génériques en exploitant une architecture et un apprentissage adaptés à l`&apos;immobilier.
         </>
       }
       align="left"
