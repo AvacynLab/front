@@ -31,7 +31,7 @@ export const Footer: React.FC<FooterProps> = (props) => {
               <Text fontSize="md" color="muted">
                 {siteConfig.seo.description}
               </Text>
-            </Stack>
+            </Stack >
             <Copyright>{siteConfig.footer.copyright}</Copyright>
           </Stack>
           <HStack justify="flex-end" spacing="4" alignSelf="flex-end">

@@ -29,18 +29,18 @@ import {
   FiArrowRight,
   FiBox,
   FiCheck,
-  FiCode,
+  FiFilePlus,
   FiCopy,
   FiFlag,
   FiGrid,
-  FiLock,
+  FiDatabase,
   FiSearch,
   FiSliders,
   FiSmile,
-  FiTerminal,
-  FiThumbsUp,
-  FiToggleLeft,
-  FiTrendingUp,
+  FiUsers,
+  FiServer,
+  FiChrome,
+  FiUploadCloud,
   FiUserPlus,
 } from "react-icons/fi";
 import { Features } from "components/features";
@@ -65,8 +65,8 @@ const Home: NextPage = () => {
   return (
     <Box>
       <SEO
-        title="Saas UI Landingspage"
-        description="Free SaaS landingspage starter kit"
+        title="Avacyn"
+        description="Création et orchestration d'agents IA pour l'exécution autonome de tâches spécifiques"
       />
       <Box>
         <HeroSection />
@@ -97,30 +97,31 @@ const HeroSection: React.FC = () => {
             px="0"
             title={
               <FallInPlace>
-                Build beautiful
-                <Br /> software faster
+                Plus de temps,
+                <Br /> plus d'argent,
+                <Br /> moins d'efforts.
               </FallInPlace>
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-                Saas UI is a <Em>React component library</Em>
-                <Br /> that doesn&apos;t get in your way and helps you <Br />{" "}
-                build intuitive SaaS products with speed.
+                Avacyn est un <Em>assistant intelligent</Em>
+                <Br /> qui aide les professionnels de l'immobilier <Br />{" "}
+                à décupler leur productivité.
               </FallInPlace>
             }
           >
             <FallInPlace delay={0.8}>
               <HStack pt="4" pb="12" spacing="8">
-                <NextjsLogo height="28px" /> <ChakraLogo height="20px" />
+
               </HStack>
 
               <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="/signup">
-                  Sign Up
+                <ButtonLink colorScheme="primary" size="lg" href="https://app.avacyn.fr/">
+                  Connexion
                 </ButtonLink>
                 <ButtonLink
                   size="lg"
-                  href="https://demo.saas-ui.dev"
+                  href="https://app.avacyn.fr/"
                   variant="outline"
                   rightIcon={
                     <Icon
@@ -135,7 +136,7 @@ const HeroSection: React.FC = () => {
                     />
                   }
                 >
-                  View demo
+                  Réserver une démonstration
                 </ButtonLink>
               </ButtonGroup>
             </FallInPlace>
@@ -156,7 +157,7 @@ const HeroSection: React.FC = () => {
                   layout="fixed"
                   width={1200}
                   height={762}
-                  alt="Screenshot of a ListPage in Saas UI Pro"
+                  alt="Screenshot of a Page in AvacynApp"
                   quality="75"
                   priority
                 />
@@ -176,31 +177,31 @@ const HeroSection: React.FC = () => {
           {
             title: "Accessible",
             icon: FiSmile,
-            description: "All components strictly follow WAI-ARIA standards.",
+            description: "Notre plateforme a été conçue pour s'adresser à tous, quelle que soit votre compétence technique.",
             iconPosition: "left",
             delay: 0.6,
           },
           {
-            title: "Themable",
+            title: "Hyper-personnalisé",
             icon: FiSliders,
             description:
-              "Fully customize all components to your brand with theme support and style props.",
+              "Comprenant que chaque entreprise a ses exigences et ses aspirations uniques, Avacyn s'harmonisent avec vos opérations et vos défis distinctifs.",
             iconPosition: "left",
             delay: 0.8,
           },
           {
-            title: "Composable",
+            title: "Français & multimodale",
             icon: FiGrid,
             description:
-              "Compose components to fit your needs and mix them together to create new ones.",
+              "Avacyn englobe des fonctionnalités multimodales, permettant une interaction avec l’IA via le texte, la voix et l’imagerie.",
             iconPosition: "left",
             delay: 1,
           },
           {
-            title: "Productive",
-            icon: FiThumbsUp,
+            title: "Data Compliance",
+            icon: FiServer,
             description:
-              "Designed to reduce boilerplate and fully typed, build your product at speed.",
+              "Dédiés à la protection de vos données et au respect des réglementations en vigueur sur la confidentialité des données, nous adhérons rigoureusement aux normes de sécurité les plus élevées.",
             iconPosition: "left",
             delay: 1.1,
           },
@@ -216,13 +217,11 @@ const HighlightsSection = () => {
 
   return (
     <Highlights>
-      <HighlightsItem colSpan={[1, null, 2]} title="Core components">
+      <HighlightsItem colSpan={[1, null, 2]} title="Votre futur meilleur ami 😄">
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
-            Get started for free with <Em>30+ open source components</Em>.
-            Including authentication screens with Clerk, Supabase and Magic.
-            Fully functional forms with React Hook Form. Data tables with React
-            Table.
+            Que vous ayez besoin d'améliorer votre annonce, corriger la qualité d'une photo ou encore consulter une référence juridique, Avacyn est en mesure de vous assister et vous faire gagner un temps précieux.
+            Elle dispose de <Em>20+ outils</Em> pour quotidiennement vous épauler.
           </Text>
 
           <Flex
@@ -237,11 +236,11 @@ const HighlightsSection = () => {
             _dark={{ bg: "gray.900" }}
           >
             <Box>
-              <Text color="yellow.400" display="inline">
-                yarn add
-              </Text>{" "}
-              <Text color="cyan.300" display="inline">
-                @saas-ui/react
+              <Text color="purple.300" display="inline">
+                app.
+              </Text>{""}
+              <Text color="purple.500" display="inline">
+                avacyn.fr
               </Text>
             </Box>
             <IconButton
@@ -256,50 +255,45 @@ const HighlightsSection = () => {
           </Flex>
         </VStack>
       </HighlightsItem>
-      <HighlightsItem title="Solid foundations">
+      <HighlightsItem title="Des fondations solides.">
         <Text color="muted" fontSize="lg">
-          We don&apos;t like to re-invent the wheel, neither should you. We
-          selected the most productive and established tools in the scene and
-          build Saas UI on top of it.
+        Nous n'aimons pas réinventer la roue, et vous non plus. Nous avons sélectionné les outils les plus productifs et les plus établis de la scène et construit notre modèle par-dessus.
         </Text>
       </HighlightsItem>
       <HighlightsTestimonialItem
-        name="Renata Alink"
-        description="Founder"
+        name="Guillaume MATILLA"
+        description="Fondateur, CEO"
         avatar="/static/images/avatar.jpg"
         gradient={["pink.200", "purple.500"]}
       >
-        “Saas UI helped us set up a beautiful modern UI in no time. It saved us
-        hundreds of hours in development time and allowed us to focus on
-        business logic for our specific use-case from the start.”
+        “Depuis que j'utilise l'assistant IA multimodal, j'ai libéré du temps pour me concentrer sur mes clients et conclure des transactions plus rapidement. L'IA a vraiment révolutionné ma façon de travailler en immobilier.”
       </HighlightsTestimonialItem>
       <HighlightsItem
         colSpan={[1, null, 2]}
-        title="Start your next idea two steps ahead"
+        title="Mandatez avec deux longueurs d'avance."
       >
         <Text color="muted" fontSize="lg">
-          We took care of all your basic frontend needs, so you can start
-          building functionality that makes your product unique.
+        Nous prenons en charge tous vos besoins de base en matière d'immobilier, c'est pourquoi nous créons des fonctionnalités qui rendent notre produit unique.
         </Text>
         <Wrap mt="8">
           {[
-            "authentication",
-            "navigation",
-            "crud",
-            "settings",
-            "multi-tenancy",
-            "layouts",
-            "billing",
-            "a11y testing",
-            "server-side rendering",
+            "recherche avancée",
+            "documents automatiques",
+            "visites virtuelles",
+            "suivi propriétés",
+            "annonces optimisées",
+            "rapports performances",
+            "recommandations personnalisées",
+            "interaction vocale",
+            "évaluation automatique",
             "documentation",
-            "onboarding",
-            "storybooks",
-            "theming",
-            "upselling",
-            "unit testing",
-            "feature flags",
-            "responsiveness",
+            "vidéos 360°",
+            "formation interactive",
+            "gestion tâches",
+            "support multilingue",
+            "analyse performances",
+            "gestion rendez-vous",
+            "prospection",
           ].map((value) => (
             <Tag
               key={value}
@@ -328,16 +322,15 @@ const FeaturesSection = () => {
           textAlign="left"
           as="p"
         >
-          Not your standard
-          <Br /> dashboard template.
+          Ce n'est pas
+          <Br /> un énième GPT.
         </Heading>
       }
       description={
         <>
-          Saas UI Pro includes everything you need to build modern frontends.
-          <Br />
-          Use it as a template for your next product or foundation for your
-          design system.
+          Si les modèles linguistiques tels que GPT ont ouvert la voie à des applications révolutionnaires, ils rencontrent souvent leurs limites lorsqu'ils sont confrontés à des tâches complexes ou exigeant une expertise spécialisée. 
+          <Br /><Br />
+          Avacyn transcende ces modèles génériques en exploitant une architecture et un apprentissage adaptés à l'immobilier.
         </>
       }
       align="left"
@@ -345,71 +338,66 @@ const FeaturesSection = () => {
       iconSize={4}
       features={[
         {
-          title: "Components.",
+          title: "Génération.",
           icon: FiBox,
           description:
-            "All premium components are available on a private NPM registery, no more copy pasting and always up-to-date.",
+            "La génération multimodale exploite l'IA pour assembler du texte, des images, du son, et même de la vidéo.",
           variant: "inline",
         },
         {
-          title: "Starterkits.",
-          icon: FiLock,
+          title: "Mémoire court/long terme.",
+          icon: FiDatabase,
           description:
-            "Example apps in Next.JS, Electron. Including authentication, billing, example pages, everything you need to get started FAST.",
+          "Avacyn utilise une mémoire court terme et long terme pour stocker et récupérer des informations.",
           variant: "inline",
         },
         {
           title: "Documentation.",
           icon: FiSearch,
           description:
-            "Extensively documented, including storybooks, best practices, use-cases and examples.",
+          "Alimentée par une documentation conséquente (ex: juridique), notre IA peut répondre à vos questions et même générer des documents adaptés.",
           variant: "inline",
         },
         {
-          title: "Onboarding.",
+          title: "Prospection assistée.",
           icon: FiUserPlus,
           description:
-            "Add user onboarding flows, like tours, hints and inline documentation without breaking a sweat.",
+          "Elle automatise les tâches de prospection et vous offre des analyses précises pour convertir plus de leads.",
           variant: "inline",
         },
         {
-          title: "Feature flags.",
+          title: "Assistance & conseils.",
           icon: FiFlag,
           description:
-            "Implement feature toggles for your billing plans with easy to use hooks. Connect Flagsmith, or other remote config services once you're ready.",
+          "Vous avez un doute ? Avacyn est apte à vous assister et vous conseiller sur tous les sujets.",
           variant: "inline",
         },
         {
-          title: "Upselling.",
-          icon: FiTrendingUp,
+          title: "Traitement de document.",
+          icon: FiUploadCloud,
           description:
-            "Components and hooks for upgrade flows designed to make upgrading inside your app frictionless.",
+          "Ne vous chargez pas du traitement manuel, Avacyn analyse, gère directement votre document et réponds à vos questions.",
           variant: "inline",
         },
         {
-          title: "Themes.",
-          icon: FiToggleLeft,
+          title: "Recherche en temps réel.",
+          icon: FiChrome,
           description:
-            "Includes multiple themes with darkmode support, always have the perfect starting point for your next project.",
+          "Avacyn peut rechercher en temps réel pour permettre aux utilisateurs de trouver des informations rapidement et facilement.",
           variant: "inline",
         },
         {
-          title: "Generators.",
-          icon: FiTerminal,
+          title: "Multi-agents",
+          icon: FiUsers,
           description:
-            "Extend your design system while maintaininig code quality and consistency with built-in generators.",
+          "Notre architecture multi-agent accélère l'exécution en parallélisant les tâches pour des résultats ultra-rapides.",
           variant: "inline",
         },
         {
-          title: "Monorepo.",
-          icon: FiCode,
-          description: (
-            <>
-              All code is available as packages in a high-performance{" "}
-              <Link href="https://turborepo.com">Turborepo</Link>, you have full
-              control to modify and adjust it to your workflow.
-            </>
-          ),
+          title: "Rédaction spécifique.",
+          icon: FiFilePlus,
+          description:
+          "Avacyn utilise une technologie de génération de texte pour rédiger des documents automatiquement.",
           variant: "inline",
         },
       ]}
@@ -452,7 +440,7 @@ const PricingSection = () => {
   return (
     <Pricing {...pricing}>
       <Text p="8" textAlign="center" color="muted">
-        VAT may be applicable depending on your location.
+        Notre application est en bêta.
       </Text>
     </Pricing>
   );
@@ -468,10 +456,10 @@ export async function getStaticProps() {
   return {
     props: {
       announcement: {
-        title: "Support us by becoming a stargazer! 🚀 ",
+        title: "v0.1.5 est disponible !",
         description:
-          '<img src="https://img.shields.io/github/stars/saas-js/saas-ui.svg?style=social&label=Star" />',
-        href: "https://github.com/saas-js/saas-ui",
+          '<img alt="X (formerly Twitter) URL" src="https://img.shields.io/badge/Je%20veux%20essayer%20!%20🚀-8952E0">',
+        href: "https://app.avacyn.fr/",
         action: false,
       },
     },

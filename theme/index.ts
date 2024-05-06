@@ -12,6 +12,7 @@ const styles = {
       color: 'gray.900',
       bg: 'white',
       fontSize: 'lg',
+      fontFamily: 'Open Sans, sans-serif',
       _dark: {
         color: 'white',
         bg: 'gray.900',
@@ -29,6 +30,7 @@ export default extendTheme(
     styles,
     fontSizes,
     components,
+    
   },
   theme
 )

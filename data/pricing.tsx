@@ -1,36 +1,37 @@
 import { HStack, Text } from '@chakra-ui/react'
 
 export default {
-  title: 'Pricing for every stage',
+  title: 'Propulsez votre entreprise vers le succès avec des tarifs adaptés',
   description:
-    'Pay once and get life-time access to our high quality components.',
+    "On s'adapte à vous, que vous soyez un entrepreneur solo à la conquête du marché ou une agence immobilière qui gère un empire de biens. Accédez à l'IA de pointe sans exploser votre budget !",
   plans: [
     {
       id: 'oss',
-      title: 'Open Source',
-      description: 'Basic compoents, perfect to get started.',
-      price: 'Free',
+      title: 'Indépendant',
+      description: 'Parfait pour les débutants et les agents solo',
+      price: 'Nous contacter.',
       features: [
         {
-          title: 'MIT License',
+          title: 'Une license',
+        },
+        null,
+        {
+          title: 'Accès prioritaire à la V1',
         },
         {
-          title: 'Authentication (Clerk/Supabase/Magic)',
+          title: 'Webinaire & communauté',
         },
         {
-          title: 'Form (react-hook-form)',
+          title: 'Mis à jour régulièrement',
+        },
+        null,
+        {
+          title: 'Sans engagement',
+          iconColor: 'green.500',
         },
         {
-          title: 'Modals manager',
-        },
-        {
-          title: 'Hotkeys',
-        },
-        {
-          title: 'Web3 components',
-        },
-        {
-          title: 'And much more...',
+          title: 'Support sous 6h',
+          iconColor: 'green.500',
         },
       ],
       action: {
@@ -39,75 +40,76 @@ export default {
     },
     {
       id: 'bootstrap',
-      title: 'Bootstrap',
-      description: 'Complete frontend stack for bootstrappers and small teams.',
-      price: 'Free',
+      title: 'Agence & Cabinet',
+      description: 'Solution complète pour les équipes immobilières',
+      price: 'Nous contacter.',
       isRecommended: true,
       features: [
         {
-          title: 'One project',
+          title: 'Plusieurs licenses',
         },
         {
-          title: 'One developer',
-        },
-        {
-          title: 'Advanced components',
-        },
-        {
-          title: 'Multiple themes',
-        },
-        {
-          title: 'Next.js and Electron boilerplates',
-        },
-        {
-          title: 'Private discord community',
-        },
-        {
-          title: '1 year of updates',
+          title: "Données trans-utilisateurs",
         },
         null,
         {
-          title: 'Private beta access',
+          title: 'Accès prioritaire à la V1',
+        },
+        {
+          title: 'Webinaire & communauté',
+        },
+        {
+          title: 'Mis à jour régulièrement',
+        },
+        null,
+        {
+          title: 'Sans engagement',
+          iconColor: 'green.500',
+        },
+        {
+          title: 'Support sous 6h',
           iconColor: 'green.500',
         },
       ],
       action: {
-        href: 'https://appulse.gumroad.com/l/saas-ui-pro-pre-order?variant=Single%20license',
+        href: '#',
+        label: 'Réserver une démonstration',
       },
     },
     {
       id: 'startup',
-      title: 'Startup',
-      description: 'Unlimited license for growing teams.',
+      title: 'Formation',
+      description: 'Take your ticket to the Moon 🚀',
       price: (
         <HStack>
           <Text textDecoration="line-through" fontSize="sm" color="gray.400">
-            €999,-
+            1299€
           </Text>
-          <Text>€499,-</Text>
+          <Text>999€</Text>
         </HStack>
       ),
       features: [
         {
-          title: 'Unlimited projects',
+          title: '2 jours de formation',
         },
         {
-          title: 'Unlimited developers',
+          title: 'X modules et supports numérique',
         },
         {
-          title: '1 year of updates',
+          title: "6 mois d'accompagnement",
         },
         {
-          title: 'Everything from Bootstrap',
+          title: 'Mis à jour régulièrement',
         },
         null,
         {
-          title: 'Private beta access',
-          iconColor: 'green.500',
+          title: 'Accès numérique à vie',
+          iconColor: 'blue.500',
         },
       ],
       action: {
-        href: 'https://appulse.gumroad.com/l/saas-ui-pro-pre-order?variant=Unlimited%20license',
+        href: '#',
+        label: 'Bientôt..',
       },
     },
   ],
