@@ -198,7 +198,7 @@ const HeroSection: React.FC = () => {
             delay: 1,
           },
           {
-            title: "Data Compliance",
+            title: "Respect des données",
             icon: FiServer,
             description:
               "Dédiés à la protection de vos données et au respect des réglementations en vigueur sur la confidentialité des données, nous adhérons rigoureusement aux normes de sécurité les plus élevées.",
