@@ -66,7 +66,9 @@ const Home: NextPage = () => {
     <Box>
       <SEO
         title="Avacyn"
-        description="Création et orchestration d'agents IA pour l'exécution autonome de tâches spécifiques"
+        description="Avacyn est un assistant intelligent
+qui aide les professionnels de l'immobilier
+à décupler leur productivité."
       />
       <Box>
         <HeroSection />
@@ -111,18 +113,19 @@ const HeroSection: React.FC = () => {
             }
           >
             <FallInPlace delay={0.8}>
-              <HStack pt="4" pb="12" spacing="8">
+              <HStack  pb="12" spacing="8">
 
               </HStack>
 
-              <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="https://app.avacyn.fr/">
+              <Box alignItems="center" justifyContent="flex-start" w="100%" >
+                <ButtonLink colorScheme="primary" size="lg" href="https://app.avacyn.fr/" marginRight={'4'} mt="4">
                   Connexion
                 </ButtonLink>
                 <ButtonLink
                   size="lg"
                   href="https://app.avacyn.fr/"
                   variant="outline"
+                  mt="4"
                   rightIcon={
                     <Icon
                       as={FiArrowRight}
@@ -138,7 +141,7 @@ const HeroSection: React.FC = () => {
                 >
                   Réserver une démonstration
                 </ButtonLink>
-              </ButtonGroup>
+              </Box>
             </FallInPlace>
           </Hero>
           <Box
