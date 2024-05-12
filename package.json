@@ -15,7 +15,6 @@
     "@chakra-ui/theme-tools": "^2.1.2",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
-    "@fontsource/inter": "^4.5.15",
     "@fontsource/open-sans": "^5.0.28",
     "@saas-ui/auth": "^3.0.6",
     "@saas-ui/react": "^2.7.2",

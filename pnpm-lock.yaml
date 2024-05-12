@@ -23,9 +23,9 @@ dependencies:
   '@emotion/styled':
     specifier: ^11.11.5
     version: 11.11.5(@emotion/react@11.11.4)(@types/react@18.2.0)(react@18.2.0)
-  '@fontsource/inter':
-    specifier: ^4.5.15
-    version: 4.5.15
+  '@fontsource/open-sans':
+    specifier: ^5.0.28
+    version: 5.0.28
   '@saas-ui/auth':
     specifier: ^3.0.6
     version: 3.0.6(@chakra-ui/react@2.8.2)(@emotion/react@11.11.4)(@emotion/styled@11.11.5)(framer-motion@10.18.0)(react-dom@18.2.0)(react@18.2.0)
@@ -2623,8 +2623,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fontsource/inter@4.5.15:
-    resolution: {integrity: sha512-FzleM9AxZQK2nqsTDtBiY0PMEVWvnKnuu2i09+p6DHvrHsuucoV2j0tmw+kAT3L4hvsLdAIDv6MdGehsPIdT+Q==}
+  /@fontsource/open-sans@5.0.28:
+    resolution: {integrity: sha512-hBvJHY76pJT/JynGUB5EXWhnzjYfLdcMn655J5p1v9lTT9HdQSy+keq2KPVXO2Htlg998BBa3p6u/jlrZ6w0kg==}
     dev: false
 
   /@hookform/resolvers@3.3.4(react-hook-form@7.51.2):
