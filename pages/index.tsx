@@ -188,7 +188,7 @@ const HeroSection: React.FC = () => {
             title: "Hyper-personnalisé",
             icon: FiSliders,
             description:
-              "Comprenant que chaque entreprise a ses exigences et ses aspirations uniques, Avacyn s'harmonisent avec vos opérations et vos défis distinctifs.",
+              "Comprenant que chaque entreprise a ses exigences et ses aspirations uniques, Avacyn s'harmonise avec vos opérations et vos défis distinctifs.",
             iconPosition: "left",
             delay: 0.8,
           },
@@ -260,7 +260,7 @@ const HighlightsSection = () => {
       </HighlightsItem>
       <HighlightsItem title="Des fondations solides.">
         <Text color="muted" fontSize="lg">
-        Nous n&apos;aimons pas réinventer la roue, et vous non plus. Nous avons sélectionné les outils les plus productifs et les plus établis de la scène et construit notre modèle par-dessus.
+        Nous ne cherchons pas à réinventer la roue, et vous non plus. Nous avons sélectionné les outils les plus performants et les plus reconnus, et avons construit notre modèle sur cette base.
         </Text>
       </HighlightsItem>
       <HighlightsTestimonialItem
