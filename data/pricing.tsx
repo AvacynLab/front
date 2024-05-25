@@ -9,28 +9,40 @@ export default {
       id: 'oss',
       title: 'Indépendant',
       description: 'Parfait pour les débutants et les agents solo',
-      price: 'Nous contacter.',
+      price: (
+        <HStack>
+          <Text textDecoration="line-through" fontSize="sm" color="gray.400">
+            59€
+          </Text>
+          <Text>40€</Text>
+        </HStack>
+      ),
       features: [
         {
-          title: 'Une license',
+          title: 'Économiser votre temps et booster votre productivité',
+        },
+
+        {
+          title: 'Automatiser vos tâches répétitives',
+        },
+        {
+          title: 'Obtenir des informations et des analyses précieuses',
+        },
+        {
+          title: 'Améliorer votre prise de décision',
         },
         null,
+        "Cette offre est parfaite pour ceux qui veulent :",
         {
-          title: 'Accès prioritaire à la V1',
-        },
-        {
-          title: 'Webinaire & communauté',
-        },
-        {
-          title: 'Mis à jour régulièrement',
-        },
-        null,
-        {
-          title: 'Sans engagement',
+          title: "Explorer les capacités de l'IA sans engagement à long terme",
           iconColor: 'green.500',
         },
         {
-          title: 'Support sous 6h',
+          title: 'Gérer des tâches simples et quotidiennes',
+          iconColor: 'green.500',
+        },
+        {
+          title: 'Se familiariser avec Avacyn et son potentiel',
           iconColor: 'green.500',
         },
       ],
@@ -41,33 +53,31 @@ export default {
     {
       id: 'bootstrap',
       title: 'Agence & Cabinet',
-      description: 'Solution complète pour les équipes immobilières',
+      description: 'Une solution IA personnalisée qui répond parfaitement à vos besoins spécifiques.',
       price: 'Nous contacter.',
       isRecommended: true,
       features: [
         {
-          title: 'Plusieurs licenses',
+          title: 'Un agent IA unique, conçu pour vos besoins et objectifs',
         },
         {
-          title: "Données trans-utilisateurs",
+          title: "Une intégration transparente à vos systèmes existants",
         },
-        null,
+
         {
-          title: 'Accès prioritaire à la V1',
-        },
-        {
-          title: 'Webinaire & communauté',
+          title: 'Formation et un support personnalisés',
         },
         {
-          title: 'Mis à jour régulièrement',
+          title: 'Mis à jour régulièrement pour répondre à vos besoins croissants',
         },
         null,
+        "Cette offre est idéale pour les entreprises qui :",
         {
-          title: 'Sans engagement',
+          title: 'Ont des besoins complexes et spécifiques',
           iconColor: 'green.500',
         },
         {
-          title: 'Support sous 6h',
+          title: 'Souhaitent maximiser le retour sur investissement de leur IA',
           iconColor: 'green.500',
         },
       ],

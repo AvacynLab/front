@@ -62,7 +62,11 @@ export const Pricing: React.FC<PricingProps> = (props) => {
             >
               <PricingFeatures>
                 {plan.features.map((feature, i) =>
-                  feature ? (
+                  typeof feature === "string" ? (
+                    <Text key={i} my={2} color="muted">
+                      {feature}
+                    </Text>
+                  ) : feature ? (
                     <PricingFeature key={i} {...feature} />
                   ) : (
                     <br key={i} />

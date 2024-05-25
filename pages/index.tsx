@@ -260,7 +260,7 @@ const HighlightsSection = () => {
       </HighlightsItem>
       <HighlightsItem title="Des fondations solides.">
         <Text color="muted" fontSize="lg">
-        Nous ne cherchons pas à réinventer la roue, et vous non plus. Nous avons sélectionné les outils les plus performants et les plus reconnus, et avons construit notre modèle sur cette base.
+        Pourquoi réinventer la roue ? Nous avons soigneusement sélectionné les outils les plus performants et les plus reconnus pour construire notre modèle, garantissant ainsi une base fiable et éprouvée pour votre succès.
         </Text>
       </HighlightsItem>
       <HighlightsTestimonialItem
@@ -276,7 +276,7 @@ const HighlightsSection = () => {
         title="Mandatez avec deux longueurs d'avance."
       >
         <Text color="muted" fontSize="lg">
-        Nous prenons en charge tous vos besoins de base en matière d&apos;immobilier, c&apos;est pourquoi nous créons des fonctionnalités qui rendent notre produit unique.
+        Nous couvrons tous vos besoins essentiels en immobilier, en développant des fonctionnalités qui rendent notre produit vraiment unique.
         </Text>
         <Wrap mt="8">
           {[
@@ -459,7 +459,7 @@ export async function getStaticProps() {
   return {
     props: {
       announcement: {
-        title: "v0.1.5 est disponible !",
+        title: "v0.3.0 est disponible !",
         description:
           '<img alt="X (formerly Twitter) URL" src="https://img.shields.io/badge/Je%20veux%20essayer%20!%20🚀-8952E0">',
         href: "https://app.avacyn.fr/",
