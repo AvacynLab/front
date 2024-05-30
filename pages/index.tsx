@@ -459,7 +459,7 @@ export async function getStaticProps() {
   return {
     props: {
       announcement: {
-        title: "v0.3.0 est disponible !",
+        title: "v0.5.1 est disponible !",
         description:
           '<img alt="X (formerly Twitter) URL" src="https://img.shields.io/badge/Je%20veux%20essayer%20!%20🚀-8952E0">',
         href: "https://app.avacyn.fr/",
