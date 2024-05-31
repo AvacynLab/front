@@ -22,7 +22,7 @@ export interface PricingPlan {
   title: React.ReactNode;
   description: React.ReactNode;
   price: React.ReactNode;
-  features: Array<PricingFeatureProps | null>;
+  features: Array<PricingFeatureProps | string | null>;
   action: ButtonLinkProps & { label?: string };
   isRecommended?: boolean;
 }
@@ -62,7 +62,7 @@ export const Pricing: React.FC<PricingProps> = (props) => {
             >
               <PricingFeatures>
                 {plan.features.map((feature, i) =>
-                  typeof feature === "string" ? (
+                  typeof feature === 'string' ? (
                     <Text key={i} my={2} color="muted">
                       {feature}
                     </Text>
